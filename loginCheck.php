@@ -20,15 +20,14 @@ $sql = "SELECT user_role FROM people WHERE user_name = '$user' AND user_password
 
 //mysqli_query takes two parameters $db(db connection) and $sql variable
 $result = $db -> query($sql);
-$role = $result -> fetch_field_direct(0);
 
-if(mysqli_num_rows($result) == 1){
+if($result["user_role"] == "user"){
     /*session_start();
     $_SESSION['access_level'] = "standarduser";
     setcookie('access_level', 'standarduser');*/
     header("Location:userView.php");
 }
-elseif($role == "admin"){
+elseif($result["user_role"] == "admin"){
     header("Location:adminView.php");
 }
 else{
