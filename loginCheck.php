@@ -25,11 +25,12 @@ if($result["user_role"] == "user"){
     setcookie('access_level', 'standarduser');*/
     header("Location:userView.php");
 }
+
 elseif($result["user_role"] == "admin"){
     header("Location:adminView.php");
 }
+
 else{
     header("Location:index.html");
-    echo $result;
 }
 ?>
