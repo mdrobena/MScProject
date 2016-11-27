@@ -1,7 +1,7 @@
 <?php
 
 //including connection to my db
-include ("dbconnect.php");
+include("dbconnect.php");
 
 //POST method to get user's ID and password from index.html
 $user = $_POST["userID"];
