@@ -9,10 +9,19 @@ session_start();
 
 //including connection to my db
 include ("dbconnect.php");
+if ($db) {
+    echo 'good db';
+}
+else {
+    echo mysqli_connect_errno() . PHP_EOL;
+    echo mysqli_connect_error() . PHP_EOL;
+}
+
+
 
 //POST method to get user's ID and password from index.html
-$user = $_POST["userID"];
-$password = $_POST["password"];
+$user = $_POST['userID'];
+$password = $_POST['password'];
 
 //a query that returns the user's role(admin or user)
 $sql = "SELECT user_role FROM people WHERE user_name = '$user' AND user_password = '$password'";
