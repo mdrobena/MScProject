@@ -18,8 +18,8 @@ $password = $_POST["password"];
 $sql = "SELECT user_role FROM people WHERE user_name = '$user' AND user_password = '$password'";
 
 //mysqli_query takes two parameters $db(db connection) and $sql variable
-$result = mysqli_query($db, $sql);
-$role = $result->fetch_field_direct(0);
+$result = $db -> query($sql);
+$role = $result -> fetch_field_direct(0);
 
 if($role == "user"){
     /*session_start();
