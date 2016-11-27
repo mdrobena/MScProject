@@ -5,6 +5,9 @@
  * Date: 27/11/2016
  * Time: 16:12
  */
+//including connection to my db
+include ("dbconnect.php");
+
 //POST method to get user's ID and password from index.html
 $user = $_POST["userID"];
 $password = $_POST["password"];
