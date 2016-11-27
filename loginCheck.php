@@ -5,8 +5,6 @@
  * Date: 27/11/2016
  * Time: 16:12
  */
-session_start();
-
 
 //including connection to my db
 include ("dbconnect.php");
@@ -34,5 +32,4 @@ else{
     header("Location:index.html");
     echo $result;
 }
-session_destroy();
 ?>
