@@ -7,6 +7,7 @@
  */
 session_start();
 
+
 //including connection to my db
 include ("dbconnect.php");
 
@@ -32,6 +33,7 @@ elseif($role == "admin"){
 }
 else{
     header("Location:index.html");
+    echo $result;
 }
 session_destroy();
 ?>
