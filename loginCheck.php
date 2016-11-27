@@ -15,11 +15,14 @@ $result = $db -> query($sql);
 if (mysqli_num_rows($result) == 1) {
 
     if ($result["user_role"] == "user") {
-        header("location: userView.php");
+        header("Location: http://wellbore.azurewebsites.net/userView.php");
+        exit;
     } elseif ($result["user_role"] == "admin") {
-        header("location: adminView.php");
+        header("Location: http://wellbore.azurewebsites.net/adminView.php");
+        exit;
     } else {
-        header("location: index.html");
+        header("Location: http://wellbore.azurewebsites.net/index.html");
+        exit;
     }
 }
 else{
