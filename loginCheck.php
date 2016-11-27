@@ -5,6 +5,8 @@
  * Date: 27/11/2016
  * Time: 16:12
  */
+session_start();
+
 //including connection to my db
 include ("dbconnect.php");
 
@@ -30,4 +32,5 @@ elseif($result == "admin"){
 else{
     header("Location:index.html");
 }
+session_destroy();
 ?>
