@@ -15,11 +15,11 @@ $result = $db -> query($sql);
 if (mysqli_num_rows($result) == 1) {
 
     if ($result["user_role"] == "user") {
-        header("Location:userView.php");
+        header("location: userView.php");
     } elseif ($result["user_role"] == "admin") {
-        header("Location:adminView.php");
+        header("location: adminView.php");
     } else {
-        header("Location:index.html");
+        header("location: index.html");
     }
 }
 else{
