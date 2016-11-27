@@ -16,13 +16,13 @@ if (mysqli_num_rows($result) == 1) {
 
     if ($result["user_role"] == "user") {
         header("Location: userView.php");
-        exit;
+        exit();
     } elseif ($result["user_role"] == "admin") {
         header("Location: adminView.php");
-        exit;
+        exit();
     } else {
         header("Location: index.html");
-        exit;
+        exit();
     }
 }
 else{
