@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Michal
- * Date: 27/11/2016
- * Time: 16:12
- */
 
 //including connection to my db
 include ("dbconnect.php");
@@ -18,16 +12,18 @@ $sql = "SELECT user_role FROM people WHERE user_name = '$user' AND user_password
 
 //mysqli_query takes two parameters $db(db connection) and $sql variable
 $result = $db -> query($sql);
+if (mysqli_num_rows($result) == 1) {
 
-if($result["user_role"] == "user"){
-    header("Location:userView.php");
+    if ($result["user_role"] == "user") {
+        header("Location:userView.php");
+    } elseif ($result["user_role"] == "admin") {
+        header("Location:adminView.php");
+    } else {
+        header("Location:index.html");
+    }
 }
-
-elseif($result["user_role"] == "admin"){
-    header("Location:adminView.php");
-}
-
 else{
-    header("Location:index.html");
+    echo mysqli_connect_errno().PHP_EOL;
+    echo mysqli_connect_error().PHP_EOL;
 }
 ?>
