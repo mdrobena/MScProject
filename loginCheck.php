@@ -20,9 +20,6 @@ $sql = "SELECT user_role FROM people WHERE user_name = '$user' AND user_password
 $result = $db -> query($sql);
 
 if($result["user_role"] == "user"){
-    /*session_start();
-    $_SESSION['access_level'] = "standarduser";
-    setcookie('access_level', 'standarduser');*/
     header("Location:userView.php");
 }
 
