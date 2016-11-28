@@ -3,8 +3,8 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset= UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" href="DataTables/datatables.min.css">
-    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
     <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="jquery-1.12.3.js"></script>
     <link rel="icon" href="image/favicon.ico">
