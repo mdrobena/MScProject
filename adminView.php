@@ -17,10 +17,8 @@
 <body>
     <main>
         <div class="container">
-            ::before
             <div id="example_wrapper" class="dataTables_wrapper from-inline dt-bootstrap no-footer">
                 <div class="row">
-                    ::before
                     <div class="col-sm-6">
                         <div class="dataTables_length" id="example_length">
                             <label>
@@ -43,46 +41,20 @@
                             </label>
                         </div>
                     </div>
-                    ::after
                  </div>
                 <div class="row">
-                    ::before
                     <div class="col-sm-12">
                         <table id="example" class="table table-striped table-bordered dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
                             <thead>
                                 <tr role="row">
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">
-                                        "User ID"
-                                        ::after
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 258px;">
-                                        "First name"
-                                        ::after
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 258px;">
-                                        "Last name"
-                                        ::after
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 258px;">
-                                        "User name"
-                                        ::after
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 258px;">
-                                        "User password"
-                                        ::after
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">
-                                        "Company"
-                                        ::after
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">
-                                        "User role"
-                                        ::after
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">
-                                        "Start date"
-                                        ::after
-                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">User ID</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 258px;">First name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 258px;">Last name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 258px;">User name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 258px;">User password</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">Company</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">User role</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">Start date</th>
                                 </tr>
                             </thead>
                             <tbody>
