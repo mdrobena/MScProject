@@ -29,7 +29,7 @@
                 $role = $row['user_role'];
 
                 if ($count > 0){?>
-                    <table id="example" class="display" cellspacing="0" width="80%">
+                    <table id="example" class="display" cellspacing="0" width="70%">
                         <thead>
                             <tr>
                                 <th>User ID</th>
@@ -67,6 +67,7 @@
                         </tr>
                         <?php } ?>
                         </tbody>
+                    </table>
                 <?php }
                 ?>
         </div>
