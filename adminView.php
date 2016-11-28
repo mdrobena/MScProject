@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf-8" src="jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.css">
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
     <link rel="icon" href="image/favicon.ico">
 </head>
@@ -51,7 +51,7 @@
                             <td><?php echo $row['user_role']?></td>
                             <td><?php echo $row['start_date']?></td>
                         </tr>
-                        <?php $x++; } ?>
+                        <?php } ?>
                         </tbody>
                     </table>
                 <?php }
