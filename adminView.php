@@ -4,14 +4,16 @@
     <meta http-equiv="content-type" content="text/html; charset= UTF-8">
     <title>Admin</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
     <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="jquery-1.12.3.js"></script>
     <link rel="icon" href="image/favicon.ico">
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
-                    $('#example').DataTable({
-                        "order": [[1, "desc"]]
+                    $('#example').DataTable();
 
                 } );
     </script>
