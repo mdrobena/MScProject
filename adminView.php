@@ -70,15 +70,15 @@
                             $result = mysqli_query($db, $sql);
 
                             while ($row = mysqli_fetch_assoc($result)){?>
-                                <tr role="row">
-                                    <td><?php echo $row['user_id']?></td>
-                                    <td><?php echo $row['first_name']?></td>
-                                    <td><?php echo $row['last_name']?></td>
-                                    <td><?php echo $row['user_name']?></td>
-                                    <td><?php echo $row['user_password']?></td>
-                                    <td><?php echo $row['company']?></td>
-                                    <td><?php echo $row['user_role']?></td>
-                                    <td><?php echo $row['start_date']?></td>
+                                <tr role="row" class="odd">
+                                    <td class="sorting"><?php echo $row['user_id']?></td>
+                                    <td class="sorting"><?php echo $row['first_name']?></td>
+                                    <td class="sorting"><?php echo $row['last_name']?></td>
+                                    <td class="sorting"><?php echo $row['user_name']?></td>
+                                    <td class="sorting"><?php echo $row['user_password']?></td>
+                                    <td class="sorting"><?php echo $row['company']?></td>
+                                    <td class="sorting"><?php echo $row['user_role']?></td>
+                                    <td class="sorting"><?php echo $row['start_date']?></td>
                                 </tr>
                             <?php } ?>
                             </tbody>
