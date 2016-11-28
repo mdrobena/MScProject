@@ -10,7 +10,8 @@
     <link rel="icon" href="image/favicon.ico">
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
-                    $('#example').DataTable();
+                    $('#example').DataTable({
+                        data: data
                 } );
     </script>
 </head>
