@@ -119,11 +119,11 @@
             </div>
             </div>
         </div>
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
             $('#example')
                 .remove('display')
                 .addClass('table table-striped table-bordered');
-        </script>
+        </script>-->
     </main>
 </body>
 
