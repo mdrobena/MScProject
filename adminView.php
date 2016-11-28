@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" href="DataTables/Bootstrap-3.3.6/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="DataTables/Bootstrap-3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="DataTables/DataTables-1.10.12/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="DataTables/datatables.css">
     <script type="text/javascript" src="DataTables/datatables.min.js"></script>
     <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
