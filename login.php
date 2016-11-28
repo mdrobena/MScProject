@@ -16,5 +16,10 @@
 
         if ($count == 1 && $role == "user"){
             header("location: userView.php");
+            exit();
+        }
+        elseif ($count == 1 && $role == "admin"){
+            header("location: adminView.php");
+            exit();
         }
     }
