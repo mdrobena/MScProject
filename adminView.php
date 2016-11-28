@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Admin Pro</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js">
-    <link rel="stylesheet" href="https://code.jquery.com/jquery-1.12.3.js">
+    <link src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js">
+    <link src="https://code.jquery.com/jquery-1.12.3.js">
     <link rel="stylesheet" href="css/adminView.css">
     <link rel="icon" href="image/favicon.ico">
     <script src="jquery-3.1.1.min.js"></script>
