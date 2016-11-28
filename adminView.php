@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="DataTables/datatables.css">
     <script type="text/javascript" src="DataTables/datatables.min.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
+    <script src="jquery-1.12.3.js"></script>
     <link rel="icon" href="image/favicon.ico">
 </head>
 <body>
