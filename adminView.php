@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
+    <link rel="stylesheet" href="DataTables/Bootstrap-3.3.6/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="DataTables/datatables.css">
     <script type="text/javascript" src="DataTables/datatables.min.js"></script>
-    <script src="jquery-3.1.1.min.js"></script>
-    <script src="jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="jquery-1.12.3.js"></script>
     <link rel="icon" href="image/favicon.ico">
 </head>
 <body>
@@ -27,7 +28,7 @@
                 $count = mysqli_num_rows($result);
 
                 if ($count > 0){?>
-                    <table id="example" class="display compact" cellspacing="0" width="100%">
+                    <table id="example" class="display compact" cellspacing="0" width="960px">
                         <thead>
                             <tr>
                                 <th>User ID</th>
