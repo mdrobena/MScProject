@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
-    <script type="text/javascript" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js">
-    <script type="text/javascript" href="https://code.jquery.com/jquery-1.12.3.js"></script>
-    <link rel="icon" href="image/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#example').DataTable();
         } );
     </script>
+    <link rel="icon" href="image/favicon.ico">
 </head>
 <body>
     <main>
@@ -42,18 +41,6 @@
                                 <th>Start date</th>
                             </tr>
                         </thead>
-                        <tfoot>
-                            <tr>
-                                <th>User ID</th>
-                                <th>First name</th>
-                                <th>Last name</th>
-                                <th>User name</th>
-                                <th>User password</th>
-                                <th>Company</th>
-                                <th>User role</th>
-                                <th>Start date</th>
-                            </tr>
-                        </tfoot>
                         <tbody><?php while ($row = mysqli_fetch_assoc($result)){?>
                         <tr>
                             <td><?php echo $row['user_id']?></td>
