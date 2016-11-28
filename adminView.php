@@ -22,21 +22,21 @@
                     <div class="col-sm-6">
                         <div class="dataTables_length" id="example_length">
                             <label>
-                                "Show"
+                                Show
                                 <select name="example_length" aria-controls="example" class="form-control input-sm">
                                     <option value="10">10</option>
                                     <option value="25">25</option>
                                     <option value="50">50</option>
                                     <option value="100">100</option>
                                 </select>
-                                "entries"
+                                entries
                             </label>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div id="example_filter" class="dataTables_filter">
                             <label>
-                                "Search:"
+                                Search:
                                 <input type="search" class="form-control input-sm" placeholder aria-controls="example">
                             </label>
                         </div>
@@ -80,10 +80,8 @@
                             </tbody>
                         </table>
                     </div>
-                    ::after
                 </div>
                 <div class="row">
-                    ::before
                     <div class="col-sm-5">
                         <div class="dataTables_info" id="example_info" role="status" aria-live="polite"></div>
                     </div>
@@ -117,19 +115,15 @@
                             </ul>
                         </div>
                     </div>
-                    ::after
                 </div>
             </div>
-            ::after
             </div>
         </div>
-        <!--<script type="text/javascript">
+        <script type="text/javascript">
             $('#example')
                 .remove('display')
                 .addClass('table table-striped table-bordered');
-        </script>-->
+        </script>
     </main>
 </body>
-
-
 </html>
