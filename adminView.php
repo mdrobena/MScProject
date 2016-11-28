@@ -66,8 +66,8 @@
                         </tr>
                         <?php } ?>
                         </tbody>
-            <?php}
-            ?>
+                <?php }
+                ?>
         </div>
     </main>
 </body>
