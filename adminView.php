@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset= UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" href="DataTables/Bootstrap-3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="DataTables/DataTables-1.10.12/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="DataTables/datatables.css">
-    <script type="text/javascript" src="DataTables/Bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="DataTables/datatables.min.css">
     <script type="text/javascript" src="DataTables/datatables.min.js"></script>
     <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="jquery-1.12.3.js"></script>
     <link rel="icon" href="image/favicon.ico">
+    <script type="text/javascript" charset="utf-8">
+                $(document).ready(function() {
+                    $('#example').DataTable();
+                } );
+    </script>
 </head>
 <body>
-    <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
-        } );
-    </script>
     <main>
         <div id="table">
             <?php
