@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" type="text/css" src="css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf-8" src="jquery.dataTables.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
     <link rel="icon" href="image/favicon.ico">
