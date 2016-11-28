@@ -11,7 +11,10 @@
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
                     $('#example').DataTable({
-                        data: data
+                        "orderMulti": true,
+                        "pageLength": 10,
+                        "lenghtChange": true
+
                 } );
     </script>
 </head>
