@@ -24,8 +24,6 @@
                 $result = mysqli_query($db, $sql);
 
                 $count = mysqli_num_rows($result);
-                $row = $result -> fetch_assoc();
-                $role = $row['user_role'];
 
                 if ($count > 0){?>
                     <table id="example" class="display" cellspacing="0" width="100%">
@@ -42,7 +40,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <?php $x = 1; while ($x <= $count){?>
+                        <?php while ($row = mysqli_fetch_assoc($result)){?>
                         <tr>
                             <td><?php echo $row['user_id']?></td>
                             <td><?php echo $row['first_name']?></td>
