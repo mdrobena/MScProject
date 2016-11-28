@@ -42,7 +42,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <?php for ($x = 0; $x < $count; $x++){?>
+                        <?php $x =1; while ($x <= $count){?>
                         <tr>
                             <td><?php echo $row['user_id']?></td>
                             <td><?php echo $row['first_name']?></td>
@@ -53,7 +53,7 @@
                             <td><?php echo $row['user_role']?></td>
                             <td><?php echo $row['start_date']?></td>
                         </tr>
-                        <?php } ?>
+                        <?php $x++; } ?>
                         </tbody>
                     </table>
                 <?php }
