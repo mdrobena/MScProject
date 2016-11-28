@@ -16,48 +16,114 @@
 </head>
 <body>
     <main>
-        <div id="table">
-            <?php
-                include ("dbconnect.php");
-                session_start();
+        <div class="container">
+            <div id="example_wrapper" class="dataTables_wrapper from-inline dt-bootstrap no-footer">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="dataTables_length" id="example_length">
+                            <label>
+                                "Show"
+                                <select name="example_length" aria-controls="example" class="form-control input-sm">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                "entries"
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="example_filter" class="dataTables_filter">
+                            <label>
+                                "Search:"
+                                <input type="search" class="form-control input-sm" placeholder aria-controls="example">
+                            </label>
+                        </div>
+                    </div>
+                 </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table id="example" class="table table-striped table-bordered dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>User ID</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>User name</th>
+                                    <th>User password</th>
+                                    <th>Company</th>
+                                    <th>User role</th>
+                                    <th>Start date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            include ("dbconnect.php");
+                            session_start();
 
-                $sql = "SELECT * FROM people";
-                $result = mysqli_query($db, $sql);
+                            $sql = "SELECT * FROM people";
+                            $result = mysqli_query($db, $sql);
 
-                $count = mysqli_num_rows($result);
-
-                if ($count > 0){?>
-                    <table id="example" class="display compact" cellspacing="0" width="960px">
-                        <thead>
-                            <tr>
-                                <th>User ID</th>
-                                <th>First name</th>
-                                <th>Last name</th>
-                                <th>User name</th>
-                                <th>User password</th>
-                                <th>Company</th>
-                                <th>User role</th>
-                                <th>Start date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <?php while ($row = mysqli_fetch_assoc($result)){?>
-                        <tr>
-                            <td><?php echo $row['user_id']?></td>
-                            <td><?php echo $row['first_name']?></td>
-                            <td><?php echo $row['last_name']?></td>
-                            <td><?php echo $row['user_name']?></td>
-                            <td><?php echo $row['user_password']?></td>
-                            <td><?php echo $row['company']?></td>
-                            <td><?php echo $row['user_role']?></td>
-                            <td><?php echo $row['start_date']?></td>
-                        </tr>
-                        <?php } ?>
-                        </tbody>
-                    </table>
-                <?php }
-                ?>
+                            while ($row = mysqli_fetch_assoc($result)){?>
+                                <tr>
+                                    <td><?php echo $row['user_id']?></td>
+                                    <td><?php echo $row['first_name']?></td>
+                                    <td><?php echo $row['last_name']?></td>
+                                    <td><?php echo $row['user_name']?></td>
+                                    <td><?php echo $row['user_password']?></td>
+                                    <td><?php echo $row['company']?></td>
+                                    <td><?php echo $row['user_role']?></td>
+                                    <td><?php echo $row['start_date']?></td>
+                                </tr>
+                            <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="dataTables_info" id="example_info" role="status" aria-live="polite"></div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button previous" id="example_previous">
+                                    <a href="#" aria-controls="example" data-dt-idx="0" tabindex="0">Previous</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a href="#" aria-controls="example" data-dt-idx="1" tabindex="0">1</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a href="#" aria-controls="example" data-dt-idx="2" tabindex="0">2</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a href="#" aria-controls="example" data-dt-idx="3" tabindex="0">3</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a href="#" aria-controls="example" data-dt-idx="4" tabindex="0">4</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a href="#" aria-controls="example" data-dt-idx="5" tabindex="0">5</a>
+                                </li>
+                                <li class="paginate_button">
+                                    <a href="#" aria-controls="example" data-dt-idx="6" tabindex="0">6</a>
+                                </li>
+                                <li class="paginate_button next" id="example_next">
+                                    <a href="#" aria-controls="example" data-dt-idx="7" tabindex="0">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
+        <script type="text/javascript">
+            $('#example')
+                .remove('display')
+                .addClass('table table-striped table-bordered');
+        </script>
     </main>
 </body>
 
