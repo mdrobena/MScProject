@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Pro</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
     <link href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js">
     <link href="https://code.jquery.com/jquery-1.12.3.js">
@@ -29,7 +29,7 @@
                 $role = $row['user_role'];
 
                 if ($count > 0){?>
-                    <table id="example" class="display" cellspacing="0" width="100%">
+                    <table id="example" class="display" cellspacing="0" width="80%">
                         <thead>
                             <tr>
                                 <th>User ID</th>
