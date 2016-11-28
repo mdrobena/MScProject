@@ -27,7 +27,7 @@
                 $count = mysqli_num_rows($result);
 
                 if ($count > 0){?>
-                    <table id="example" class="display" cellspacing="0" width="100%">
+                    <table id="example" class="display compact" cellspacing="0" width="100%">
                         <thead>
                             <tr>
                                 <th>User ID</th>
