@@ -11,9 +11,7 @@
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
                     $('#example').DataTable({
-                        "orderMulti": true,
-                        "pageLength": 10,
-                        "lenghtChange": true
+                        "order": [[1, "desc"]]
 
                 } );
     </script>
