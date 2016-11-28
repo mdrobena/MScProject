@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf-8" href="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
-       <link rel="icon" href="image/favicon.ico">
+    <link rel="stylesheet" type="text/css" src="css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf-8" src="jquery.dataTables.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <link rel="icon" href="image/favicon.ico">
 </head>
 <body>
-    <script src="jquery-3.1.1.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#example').DataTable();
@@ -27,8 +27,6 @@
                 $row = $result -> fetch_assoc();
                 $role = $row['user_role'];
 
-                $x = 1;
-
                 if ($count > 0){?>
                     <table id="example" class="display" cellspacing="0" width="100%">
                         <thead>
@@ -44,7 +42,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <?php while ($x <= $count){?>
+                        <?php $x = 1; while ($x <= $count){?>
                         <tr>
                             <td><?php echo $row['user_id']?></td>
                             <td><?php echo $row['first_name']?></td>
