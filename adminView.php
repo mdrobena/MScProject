@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
-    <link href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js">
-    <link href="https://code.jquery.com/jquery-1.12.3.js">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <script type="text/javascript" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js">
+    <script type="text/javascript" href="https://code.jquery.com/jquery-1.12.3.js"></script>
     <link rel="icon" href="image/favicon.ico">
     <script src="jquery-3.1.1.min.js"></script>
     <script>
@@ -29,7 +29,7 @@
                 $role = $row['user_role'];
 
                 if ($count > 0){?>
-                    <table id="example" class="display" cellspacing="0" width="70%">
+                    <table id="example" class="display" cellspacing="0" width="100%">
                         <thead>
                             <tr>
                                 <th>User ID</th>
