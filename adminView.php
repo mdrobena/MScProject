@@ -5,15 +5,15 @@
     <title>Admin</title>
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf-8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+       <link rel="icon" href="image/favicon.ico">
+</head>
+<body>
     <script src="jquery-3.1.1.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#example').DataTable();
         } );
     </script>
-    <link rel="icon" href="image/favicon.ico">
-</head>
-<body>
     <main>
         <div id="table">
             <?php
@@ -41,7 +41,8 @@
                                 <th>Start date</th>
                             </tr>
                         </thead>
-                        <tbody><?php while ($row = mysqli_fetch_assoc($result)){?>
+                        <tbody>
+                        <?php for ($x = 0; $x < $count; $x++){?>
                         <tr>
                             <td><?php echo $row['user_id']?></td>
                             <td><?php echo $row['first_name']?></td>
