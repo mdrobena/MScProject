@@ -25,9 +25,9 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container" style="margin-left: auto; margin-right: auto" >
     <nav class="navbar navbar-default">
-        <div class="container-fluid" style="margin-left: auto; margin-right: auto" >
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
