@@ -66,8 +66,8 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-        <div id="addForm" class="container">
-            <form class="form-horizontal">
+        <div class="container">
+            <form id="addForm" class="form-horizontal">
                 <fieldset>
                     <legend>Add user/admin</legend>
                     <div class="form-group">
@@ -124,6 +124,7 @@
                 </fieldset>
             </form
         </div>
+
         <div class="container">
             <table id="table_id" class="display">
                 <thead>
