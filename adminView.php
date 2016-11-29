@@ -78,7 +78,6 @@
                                     <th>Company</th>
                                     <th>User role</th>
                                     <th>Start date</th>
-                                    <th>Select</th>
                                 </tr>
                             </thead>
                             <tbody>
