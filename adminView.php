@@ -64,20 +64,20 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-        <div id="add" class="container">
-            <form id="addForm" class="form-horizontal">
+        <div class="container">
+            <form id="addForm" class="form-horizontal" width="50%">
                 <fieldset>
                     <legend>Add user/admin</legend>
                     <div class="form-group">
                         <label for="firstName" class="col-lg-2 control-label">First name</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="firstName" placeholder="Fisrt name" required>
+                            <input type="text" class="form-control" id="firstName"  placeholder="Fisrt name" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="lastName" class="col-lg-2 control-label">Last name</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                            <input type="text" class="form-control" id="lastName"  placeholder="Last name" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -122,46 +122,43 @@
                 </fieldset>
             </form
         </div>
+        <div class="container">
+            <table id="table_id" class="display">
+                <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>User name</th>
+                    <th>User password</th>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Start date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                include ("dbconnect.php");
+                session_start();
 
-                    <div class="container">
-                        <table id="table_id" class="display">
-                            <thead>
-                                <tr>
-                                    <th>User ID</th>
-                                    <th>First name</th>
-                                    <th>Last name</th>
-                                    <th>User name</th>
-                                    <th>User password</th>
-                                    <th>Company</th>
-                                    <th>Role</th>
-                                    <th>Start date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <?php
-                            include ("dbconnect.php");
-                            session_start();
+                $sql = "SELECT * FROM people";
+                $result = mysqli_query($db, $sql);
 
-                            $sql = "SELECT * FROM people";
-                            $result = mysqli_query($db, $sql);
-
-                            while ($row = mysqli_fetch_assoc($result)){?>
-                                <tr>
-                                    <td><?php echo $row['user_id']?></td>
-                                    <td><?php echo $row['first_name']?></td>
-                                    <td><?php echo $row['last_name']?></td>
-                                    <td><?php echo $row['user_name']?></td>
-                                    <td><?php echo $row['user_password']?></td>
-                                    <td><?php echo $row['company']?></td>
-                                    <td><?php echo $row['user_role']?></td>
-                                    <td><?php echo $row['start_date']?></td>
-                                </tr>
-                            <?php } ?>
-                            </tbody>
-                        </table>
-                    </div>
-
-
+                while ($row = mysqli_fetch_assoc($result)){?>
+                    <tr>
+                        <td><?php echo $row['user_id']?></td>
+                        <td><?php echo $row['first_name']?></td>
+                        <td><?php echo $row['last_name']?></td>
+                        <td><?php echo $row['user_name']?></td>
+                        <td><?php echo $row['user_password']?></td>
+                        <td><?php echo $row['company']?></td>
+                        <td><?php echo $row['user_role']?></td>
+                        <td><?php echo $row['start_date']?></td>
+                    </tr>
+                <?php } ?>
+                </tbody>
+            </table>
+        </div>
     <footer class="footer">
         <div class="container">
             <p class="text-muted">Developed by Michal Drobena 2016</p>
