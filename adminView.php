@@ -141,7 +141,7 @@
                 </tbody>
             </table>
         </div>
-    <footer class="footer">
+    <footer class="foottter">
         <div class="container">
             <p class="text-muted">Developed by Michal Drobena 2016</p>
         </div>
