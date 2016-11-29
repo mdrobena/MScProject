@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
 
     <!-- Custom styles for this template -->
-    <!--<link href="css/sticky-footer-navbar.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/adminView.css">
 
 
 </head>
@@ -149,7 +149,7 @@
             </table>
         </div>
 
-<footer class="modal-footer">
+<footer class="footer">
     <div class="container">
         <p class="text-muted">Developed by Michal Drobena 2016</p>
     </div>
