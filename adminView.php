@@ -147,11 +147,12 @@
         </div>
     </footer>
 
+    <!--jQuery library-->
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+
     <!-- Bootstrap minified JavaScript -->
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-    <!--jQuery library-->
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 
     <!--DataTables javascript file-->
     <script type="text/javascript" charset="utf8" src="DataTables/DataTables-1.10.12/js/jquery.dataTables.js"></script>
