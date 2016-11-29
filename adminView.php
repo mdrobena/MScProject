@@ -112,7 +112,7 @@
     </div>
 
         <div class="container">
-            <table id="table_id" class="display" width="90%">
+            <table id="table_id" class="display">
                 <thead>
                 <tr>
                     <th>User ID</th>
