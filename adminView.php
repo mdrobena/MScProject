@@ -38,11 +38,9 @@
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <a>Admin portal</a>
-            </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
+                    <li></li><p>Admin portal</p></li>
                     <li><a class="b" href="adminView.php">Home</a></li>
                     <li><a href="#">Add user/admin</a></li>
                     <li><a href="#">Delete user/admin</a></li>
