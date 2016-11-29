@@ -68,7 +68,7 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-        <main>
+
                     <div class="container">
                         <table id="table_id" class="display">
                             <thead>
@@ -107,10 +107,10 @@
                         </table>
                     </div>
 
-    </main>
+
     <footer class="footer">
         <div class="container">
-            <p class="text-muted">Developed by michal Drobena 2016</p>
+            <p class="text-muted">Developed by Michal Drobena 2016</p>
         </div>
     </footer>
 </body>
