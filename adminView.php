@@ -45,7 +45,7 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-        <div class="row">
+        <div class="container">
             <form id="addForm" class="form-horizontal">
                 <fieldset>
                     <legend>Add user/admin</legend>
