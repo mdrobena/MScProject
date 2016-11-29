@@ -149,7 +149,7 @@
             </table>
         </div>
 
-<footer >
+<footer class="modal-footer">
     <div class="container">
         <p class="text-muted">Developed by Michal Drobena 2016</p>
     </div>
