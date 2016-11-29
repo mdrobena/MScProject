@@ -58,8 +58,8 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-        <div hidden id="add" class="container">
-            <form id="addForm" class="form-horizontal">
+        <div id="add" class="container">
+            <form hidden id="addForm" class="form-horizontal">
                 <fieldset>
                     <legend>Add user/admin</legend>
                     <div class="form-group">
