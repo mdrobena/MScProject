@@ -6,6 +6,7 @@
     <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sticky-footer-navbar.css">
     <link rel="icon" href="image/favicon.ico">
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
@@ -17,8 +18,40 @@
     </script>
 </head>
 <body>
-    <main>
-
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+        <main>
+                    <div class="container">
                         <table id="table_id" class="display">
                             <thead>
                                 <tr>
@@ -30,6 +63,7 @@
                                     <th>Company</th>
                                     <th>User role</th>
                                     <th>Start date</th>
+                                    <th>Select<input type="checkbox" name=""></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -54,7 +88,13 @@
                             <?php } ?>
                             </tbody>
                         </table>
+                    </div>
 
     </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Developed by michal Drobena 2016</p>
+        </div>
+    </footer>
 </body>
 </html>
