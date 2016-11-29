@@ -33,7 +33,7 @@
                         "autoWidth": false
                     });
 
-                    $('#add').toggle();
+                    $('div.hidden').toggle();
 
                 } );
     </script>
@@ -59,7 +59,7 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-        <div id="add" class="container">
+        <div id="add" class="container hidden">
             <form id="addForm" class="form-horizontal">
                 <fieldset>
                     <legend>Add user/admin</legend>
