@@ -32,6 +32,13 @@
                     $('#table_id').DataTable({
                         "autoWidth": false
                     });
+                    $('#addButtonNavBar').click(function(){
+                        $('div.hidden').show();
+                    });
+                    $('#resetButton').click(function(){
+                        $('div.hidden').hide();
+                    });
+
 
 
                 } );
@@ -52,7 +59,7 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="adminView.php">Home</a></li>
-                    <li><a href="#">Add user/admin</a></li>
+                    <li id="addButtonNavBar"><a href="#">Add user/admin</a></li>
                     <li><a href="#">Delete user/admin</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
