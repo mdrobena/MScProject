@@ -24,6 +24,7 @@
 
 </head>
 <body>
+<div class="container">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -48,6 +49,7 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
+</div>
         <div class="container">
             <form id="addForm" class="form-horizontal">
                 <fieldset>
