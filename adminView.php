@@ -23,10 +23,11 @@
 
 
 </head>
+
 <body>
 <div class="container">
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <!--<div class="container-fluid" style="margin-left: auto" >-->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -47,67 +48,68 @@
                     <li><a href="#">Link</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
-        </div>
+        <!--</div>-->
     </nav>
 </div>
-        <div class="container">
-            <form id="addForm" class="form-horizontal">
-                <fieldset>
-                    <legend>Add user/admin</legend>
-                    <div class="form-group">
-                        <label for="firstName" class="col-lg-2 control-label">First name</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="firstName"  placeholder="First name" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName" class="col-lg-2 control-label">Last name</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="lastName"  placeholder="Last name" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="userName" class="col-lg-2 control-label">User name</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="userName" placeholder="User name" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="col-lg-2 control-label">Password</label>
-                        <div class="col-lg-10">
-                            <input type="password" class="form-control" id="password" placeholder="Password" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="company" class="col-lg-2 control-label">Company</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="company" placeholder="Company" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="role" class="col-lg-2 control-label">Role</label>
-                        <div class="col-lg-10">
-                            <select class="form-control" id="role">
-                                <option>user</option>
-                                <option>admin</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="startDate" class="col-lg-2 control-label">Start date</label>
-                        <div class="col-lg-10">
-                            <input type="date" class="form-control" id="startDate" placeholder="Start date" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-lg-10 col-lg-offset-2">
-                            <button type="reset" id="resetButton" class="btn btn-default">Cancel</button>
-                            <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
-                        </div>
-                    </div>
-                </fieldset>
-            </form
-        </div>
+
+<div class="container">
+    <form id="addForm" class="form-horizontal">
+        <fieldset>
+            <legend>Add user/admin</legend>
+            <div class="form-group">
+                <label for="firstName" class="col-lg-2 control-label">First name</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="firstName"  placeholder="First name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="col-lg-2 control-label">Last name</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="lastName"  placeholder="Last name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="userName" class="col-lg-2 control-label">User name</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="userName" placeholder="User name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-lg-2 control-label">Password</label>
+                <div class="col-lg-10">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="company" class="col-lg-2 control-label">Company</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="company" placeholder="Company" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="role" class="col-lg-2 control-label">Role</label>
+                <div class="col-lg-10">
+                    <select class="form-control" id="role">
+                        <option>user</option>
+                        <option>admin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="startDate" class="col-lg-2 control-label">Start date</label>
+                <div class="col-lg-10">
+                    <input type="date" class="form-control" id="startDate" placeholder="Start date" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="reset" id="resetButton" class="btn btn-default">Cancel</button>
+                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </form
+</div>
 
         <div class="container">
             <table id="table_id" class="display">
@@ -146,7 +148,7 @@
                 </tbody>
             </table>
         </div>
-    <footer class="foottter">
+    <footer >
         <div class="container">
             <p class="text-muted">Developed by Michal Drobena 2016</p>
         </div>
