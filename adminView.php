@@ -35,6 +35,7 @@
                 </button>
                 <a class="navbar-brand">Admin portal</a>
             </div>
+
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="adminView.php">Home</a></li>
@@ -44,14 +45,14 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-        <div class="container">
+        <div class="row">
             <form id="addForm" class="form-horizontal">
                 <fieldset>
                     <legend>Add user/admin</legend>
                     <div class="form-group">
                         <label for="firstName" class="col-lg-2 control-label">First name</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="firstName"  placeholder="Fisrt name" required>
+                            <input type="text" class="form-control" id="firstName"  placeholder="First name" required>
                         </div>
                     </div>
                     <div class="form-group">
