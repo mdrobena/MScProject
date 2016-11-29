@@ -3,15 +3,14 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Admin</title>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
     <link rel="icon" href="image/favicon.ico">
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
-                    $('#table_id').DataTable({
-                        serverSide: true,
-                        ajax: '/data-source'
+                    $('#table_id').DataTable()
+
                 } );
     </script>
 </head>
