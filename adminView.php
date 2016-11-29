@@ -9,8 +9,9 @@
     <link rel="icon" href="image/favicon.ico">
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
-                    $('#table_id').DataTable();
-
+                    $('#table_id').DataTable({
+                        serverSide: true,
+                        ajax: '/data-source'
                 } );
     </script>
 </head>
