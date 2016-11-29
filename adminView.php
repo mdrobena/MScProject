@@ -33,6 +33,8 @@
                         "autoWidth": false
                     });
 
+                    $('#add').toggle();
+
                 } );
     </script>
 </head>
