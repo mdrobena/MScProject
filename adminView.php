@@ -31,11 +31,13 @@
                 $(document).ready(function() {
                     $('#table_id').DataTable();
 
+                    $('#addForm').toggle();
+
                     $('#addButtonNavBar').click(function(){
-                        $('div.hidden').show();
+                        $('#addForm').show();
                     });
                     $('#resetButton').click(function(){
-                        $('div.hidden').hide();
+                        $('#addForm').hide();
                     });
 
 
@@ -64,8 +66,8 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
-        <div class="container">
-            <form id="addForm" class="form-horizontal" width="50%">
+        <div id="addForm" class="container">
+            <form class="form-horizontal">
                 <fieldset>
                     <legend>Add user/admin</legend>
                     <div class="form-group">
