@@ -45,7 +45,7 @@
                         <li><a href="#">Delete user/admin</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
+                        <li><form action="index.html"><input type="button" value="Sign out"></form></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -150,7 +150,7 @@
         </div>
 
 <footer class="footer">
-    
+
         <p class="text-muted">Developed by Michal Drobena 2016</p>
 
 </footer>
