@@ -19,7 +19,7 @@
 
                         <table id="table_id" class="display">
                             <thead>
-                                <tr role="row">
+                                <tr>
                                     <th>User ID</th>
                                     <th>First name</th>
                                     <th>Last name</th>
