@@ -29,9 +29,8 @@
 
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
-                    $('#table_id').DataTable({
-                        "autoWidth": false
-                    });
+                    $('#table_id').DataTable();
+
                     $('#addButtonNavBar').click(function(){
                         $('div.hidden').show();
                     });
@@ -66,7 +65,7 @@
         </div>
     </nav>
         <div id="add" class="container">
-            <form hidden id="addForm" class="form-horizontal">
+            <form id="addForm" class="form-horizontal">
                 <fieldset>
                     <legend>Add user/admin</legend>
                     <div class="form-group">
