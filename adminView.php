@@ -17,7 +17,7 @@
 <body>
     <main>
 
-                        <table id="table_id" class="display">
+                        <table id="table_id" class="display" width="960px">
                             <thead>
                                 <tr>
                                     <th>User ID</th>
