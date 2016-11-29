@@ -45,7 +45,7 @@
                         <li><a href="#">Delete user/admin</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><form action="index.html"><input type="button" value="Sign out"></form></li>
+                        <li><form action="index.html"><input type="button" value="Sign out" style="margin-top: auto"></form></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
