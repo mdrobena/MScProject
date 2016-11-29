@@ -52,8 +52,8 @@
         </nav>
     </div>
 
-    <div class="container">
-        <form id="addForm" class="form-horizontal">
+    <div id="addForm" class="container">
+        <form class="form-horizontal">
             <fieldset>
                 <legend>Add user/admin</legend>
                 <div class="form-group">
@@ -111,8 +111,8 @@
         </form
     </div>
 
-        <div id="table_id" class="container">
-            <table class="display">
+        <div class="container">
+            <table id="table_id" class="display">
                 <thead>
                 <tr>
                     <th>User ID</th>
