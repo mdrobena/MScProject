@@ -42,6 +42,9 @@
                     <li id="addButtonNavBar"><a href="#">Add user/admin</a></li>
                     <li><a href="#">Delete user/admin</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                </ul>
             </div><!--/.nav-collapse -->
         </div>
     </nav>
