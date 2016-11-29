@@ -1,49 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- These 3 meta tags must come first in the head-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="admin's view" content="">
-    <meta name="Michal Drobena" content="">
+    <!-- any other head content must come *after* these tags -->
+
+    <!--My favicon logo-->
     <link rel="icon" href="image/favicon.ico">
 
     <title>Admin</title>
 
-    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <!--DataTables CSS sheet-->
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
 
     <!-- Custom styles for this template -->
-    <!--<link href="css/sticky-footer-navbar.css" rel="stylesheet">-->
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" rel="stylesheet" integrity="sha384-gv0oNvwnqzF6ULI9TVsSmnULNb3zasNysvWwfT/s4l8k5I+g6oFz9dye0wg3rQ2Q" crossorigin="anonymous">
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 
 
-    <script type="text/javascript" charset="utf-8">
-                $(document).ready(function() {
-                    $('#table_id').DataTable();
-
-                    $('#addForm').toggle();
-
-                    $('#addButtonNavBar').click(function(){
-                        $('#addForm').show();
-                    });
-                    $('#resetButton').click(function(){
-                        $('#addForm').hide();
-                    });
-
-
-
-                } );
-    </script>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -167,5 +145,33 @@
             <p class="text-muted">Developed by Michal Drobena 2016</p>
         </div>
     </footer>
+
+    <!-- Bootstrap minified JavaScript -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!--jQuery library-->
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+
+    <!--DataTables javascript file-->
+    <script type="text/javascript" charset="utf8" src="DataTables/DataTables-1.10.12/js/jquery.dataTables.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+            $('#table_id').DataTable();
+
+            $('#addForm').toggle();
+
+            $('#addButtonNavBar').click(function(){
+                $('#addForm').show();
+            });
+            $('#resetButton').click(function(){
+                $('#addForm').hide();
+            });
+
+
+
+        } );
+    </script>
+
 </body>
 </html>
