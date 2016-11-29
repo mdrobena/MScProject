@@ -24,6 +24,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" rel="stylesheet" integrity="sha384-gv0oNvwnqzF6ULI9TVsSmnULNb3zasNysvWwfT/s4l8k5I+g6oFz9dye0wg3rQ2Q" crossorigin="anonymous">
 
 
     <script type="text/javascript" charset="utf-8">
@@ -56,6 +57,64 @@
             </div><!--/.nav-collapse -->
         </div>
     </nav>
+        <div id="add" class="container">
+            <form id="addForm" class="form-horizontal">
+                <fieldset>
+                    <legend>Add user/admin</legend>
+                    <div class="form-group">
+                        <label for="firstName" class="col-lg-2 control-label">First name</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="firstName" placeholder="Fisrt name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="col-lg-2 control-label">Last name</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName" class="col-lg-2 control-label">User name</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="userName" placeholder="User name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-lg-2 control-label">Password</label>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company" class="col-lg-2 control-label">Company</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="company" placeholder="Company" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="role" class="col-lg-2 control-label">Role</label>
+                        <div class="col-lg-10">
+                            <select class="form-control" id="role">
+                                <option>user</option>
+                                <option>admin</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate" class="col-lg-2 control-label">Start date</label>
+                        <div class="col-lg-10">
+                            <input type="date" class="form-control" id="startDate" placeholder="Start date" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button type="reset" id="resetButton" class="btn btn-default">Cancel</button>
+                            <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form
+        </div>
 
                     <div class="container">
                         <table id="table_id" class="display">
@@ -67,7 +126,7 @@
                                     <th>User name</th>
                                     <th>User password</th>
                                     <th>Company</th>
-                                    <th>User role</th>
+                                    <th>Role</th>
                                     <th>Start date</th>
                                 </tr>
                             </thead>
