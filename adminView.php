@@ -9,7 +9,9 @@
     <link rel="icon" href="image/favicon.ico">
     <script type="text/javascript" charset="utf-8">
                 $(document).ready(function() {
-                    $('#table_id').DataTable()
+                    $('#table_id').DataTable({
+                        "autoWidth": false
+                    });
 
                 } );
     </script>
@@ -17,7 +19,7 @@
 <body>
     <main>
 
-                        <table id="table_id" class="display" width="960px">
+                        <table id="table_id" class="display">
                             <thead>
                                 <tr>
                                     <th>User ID</th>
