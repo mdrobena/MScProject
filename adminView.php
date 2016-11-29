@@ -24,10 +24,10 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar">l</span>
                     <span class="icon-bar"></span>
@@ -36,7 +36,7 @@
                 <a class="navbar-brand">Admin portal</a>
             </div>
 
-            <div id="navbar" class="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="adminView.php">Home</a></li>
                     <li id="addButtonNavBar"><a href="#">Add user/admin</a></li>
