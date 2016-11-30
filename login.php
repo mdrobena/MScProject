@@ -7,7 +7,7 @@
         $username = mysqli_real_escape_string($db, $_POST['username']);
         $password = mysqli_real_escape_string($db, $_POST['password']);
 
-        $sql = "SELECT user_role FROM people WHERE user_name = '$username' AND user_password = '$password'";
+        $sql = "SELECT role FROM people WHERE user_name = '$username' AND user_password = '$password'";
         $result = mysqli_query($db, $sql);
 
         $count = mysqli_num_rows($result);
