@@ -51,7 +51,7 @@
         </nav>
     </div>
 
-    <div class="container">
+    <div hidden class="container">
         <!--Add user/admin form starts here-->
         <form id="addForm" class="form-horizontal">
             <fieldset>
