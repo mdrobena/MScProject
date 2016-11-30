@@ -194,11 +194,13 @@
             $('#deleteForm').toggle();
 
             $('#addButtonNavBar').click(function(){
-                $('#addForm').show();
+                $('#addForm').toggle();
+                $('#deleteForm').hide();
             });
 
             $('#deleteButtonNavBar').click(function(){
-                $('#deleteForm').show();
+                $('#deleteForm').toggle();
+                $('#addForm').hide();
             });
 
             $('#resetAddFormButton').click(function(){
