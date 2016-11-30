@@ -108,7 +108,7 @@
                     </div>
                 </div>
             </fieldset>
-        </form
+        </form>
     </div>
 
         <div class="container">
