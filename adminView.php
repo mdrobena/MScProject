@@ -45,7 +45,7 @@
                         <li id="deleteButtonNavBar"><a href="#">Delete user/admin</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li id="signOutButton"><form action="index.html"><input type="button" value="Sign out" style="margin-top: auto"></form></li>
+                        <li><form id="signOutButton" action="index.html"><input type="button" value="Sign out" style="margin-top: auto"></form></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
