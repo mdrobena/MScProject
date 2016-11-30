@@ -44,7 +44,7 @@
                         <li id="deleteButtonNavBar"><a href="#">Delete user/admin</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><form id="signOutButton" action="logout.php"><input type="submit" value="Sign out" ></form></li>
+                        <li><form id="signOutButton" action="logout.php"><button type="submit" value="Sign out" ></form></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -112,13 +112,13 @@
         <!--Add user/admin form ends here-->
 
         <!--Delete user/admin form starts here-->
-        <form id="deleteForm" class="form-horizontal">
+        <form id="deleteForm" class="form-horizontal" action="deleteUserAdmin.php">
             <fieldset>
                 <legend>Delete user/admin</legend>
                 <div class="form-group">
-                    <label for="firstName" class="col-lg-2 control-label">User ID</label>
+                    <label for="userID" class="col-lg-2 control-label">User ID</label>
                     <div class="col-lg-10">
-                        <input type="number" class="form-control" id="firstName"  placeholder="User ID" min="0" required>
+                        <input type="number" class="form-control" id="userID" name="userID" placeholder="User ID" min="0" required>
                     </div>
                 </div>
                 <div class="form-group">

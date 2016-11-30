@@ -26,4 +26,3 @@ else {
 }
 
 mysqli_close($db);
-?>

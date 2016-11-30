@@ -1,25 +1,31 @@
 <?php
-    include ("dbconnect.php");
-    session_start();
+include ("dbconnect.php");
+session_start();
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    $username = mysqli_real_escape_string($db, $_POST['username']);
+    $password = mysqli_real_escape_string($db, $_POST['password']);
 
-        $username = mysqli_real_escape_string($db, $_POST['username']);
-        $password = mysqli_real_escape_string($db, $_POST['password']);
+    $sql = "SELECT role FROM people WHERE user_name = '$username' AND user_password = '$password'";
+    $result = mysqli_query($db, $sql);
 
-        $sql = "SELECT role FROM people WHERE user_name = '$username' AND user_password = '$password'";
-        $result = mysqli_query($db, $sql);
+    $count = mysqli_num_rows($result);
+    $row = $result -> fetch_assoc();
+    $role = $row['role'];
 
-        $count = mysqli_num_rows($result);
-        $row = $result -> fetch_assoc();
-        $role = $row['role'];
-
-        if ($count == 1 && $role == "user"){
-            header("location: userView.php");
-            exit();
-        }
-        elseif ($count == 1 && $role == "admin"){
-            header("location: adminView.php");
-            exit();
-        }
+    if ($count == 1 && $role == "user"){
+        header("location: userView.php");
+        exit();
     }
+
+    elseif ($count == 1 && $role == "admin"){
+        header("location: adminView.php");
+        exit();
+    }
+
+    else{
+        header("location: index.html");
+        echo 'Wrong credentials!';
+        exit();
+    }
+}
