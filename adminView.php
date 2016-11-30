@@ -170,9 +170,9 @@
             </table>
         </div>
 
-<footer>
+<div class="footer">
     <p>Developed by Michal Drobena 2016</p>
-</footer>
+</div>
 
     <!--jQuery library-->
     <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
