@@ -1,11 +1,13 @@
 .footer {
     position: fixed;
     bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 
     /* Set the fixed height of the footer here */
     height: 60px;
     width: 1170px !important;
-    background-color: #333;
+    background-color: #e7e7e7;
 }
 
 .footer p {
