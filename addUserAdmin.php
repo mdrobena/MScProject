@@ -15,7 +15,7 @@ if ($db->connect_error){
 }
 
 
-$sql = "INSERT INTO people (first_name, last_name, user_name, user_password, company, user_role, start_date)
+$sql = "INSERT INTO people (first_name, last_name, user_name, user_password, company, role, start_date)
             VALUES ('$firstName', '$lastName', '$userName', '$password', '$company', '$role', '$startDate')";
 
 if (mysqli_query($db, $sql)) {

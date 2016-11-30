@@ -162,7 +162,7 @@
                         <td><?php echo $row['user_name']?></td>
                         <td><?php echo $row['user_password']?></td>
                         <td><?php echo $row['company']?></td>
-                        <td><?php echo $row['user_role']?></td>
+                        <td><?php echo $row['role']?></td>
                         <td><?php $date = date_create($row['start_date']); echo date_format($date, "d/m/Y")?></td>
                     </tr>
                 <?php } ?>
