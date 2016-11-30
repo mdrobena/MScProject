@@ -12,7 +12,7 @@
 
         $count = mysqli_num_rows($result);
         $row = $result -> fetch_assoc();
-        $role = $row['user_role'];
+        $role = $row['role'];
 
         if ($count == 1 && $role == "user"){
             header("location: userView.php");
