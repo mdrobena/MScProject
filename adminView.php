@@ -190,7 +190,7 @@
         $(document).ready(function() {
             $('#table_id').DataTable({
                 columnDefs: [
-                    {type: 'data-eu', targets: 7}
+                    {type: 'data-eu', targets: 8}
                 ]
             });
 
