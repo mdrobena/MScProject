@@ -184,10 +184,15 @@
     <script type="text/javascript" charset="utf8" src="DataTables/DataTables-1.10.12/js/jquery.dataTables.js"></script>
 
     <!--DataTables EU date javascript file-->
-    <script type="text/javascript" charset="utf8" src="DataTables/DataTables-1.10.12/plugins/date-uk.js"></script>
+    <script type="text/javascript" charset="utf8" src="DataTables/DataTables-1.10.12/plugins/moment.min.js"></script>
+
+    <!--DataTables EU date javascript file-->
+    <script type="text/javascript" charset="utf8" src="DataTables/DataTables-1.10.12/plugins/datetime-moment.js"></script>
 
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function() {
+            $.fn.dataTable.moment('dd/mm/YYYY');
+
             $('#table_id').DataTable();
 
 
