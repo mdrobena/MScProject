@@ -185,7 +185,11 @@
 
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function() {
-            $('#table_id').DataTable();
+            $('#table_id').DataTable({
+                columnDefs: [
+                    {type: 'data-eu', targets: 0}
+                ]
+            });
 
             $('#addForm').toggle();
             $('#deleteForm').toggle();
@@ -207,8 +211,6 @@
             $('#resetDeleteFormButton').click(function(){
                 $('#deleteForm').hide();
             });
-
-
 
         } );
     </script>
