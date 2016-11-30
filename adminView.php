@@ -44,7 +44,7 @@
                         <li id="deleteButtonNavBar"><a href="#">Delete user/admin</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><form id="signOutButton" action="logout.php"><input type="button" value="Sign out" ></form></li>
+                        <li><form id="signOutButton" action="logout.php"><input type="submit" value="Sign out" ></form></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
