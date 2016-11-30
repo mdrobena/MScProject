@@ -40,7 +40,6 @@
 
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="adminView.php">Home</a></li>
                         <li id="addButtonNavBar"><a href="#">Add user/admin</a></li>
                         <li id="deleteButtonNavBar"><a href="#">Delete user/admin</a></li>
                     </ul>
