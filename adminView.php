@@ -89,7 +89,7 @@
                 <div class="form-group">
                     <label for="role" class="col-lg-2 control-label">Role</label>
                     <div class="col-lg-10">
-                        <select class="form-control" id="role">
+                        <select class="form-control" id="role" name="role">
                             <option>user</option>
                             <option>admin</option>
                         </select>
@@ -98,7 +98,7 @@
                 <div class="form-group">
                     <label for="startDate" class="col-lg-2 control-label">Start date</label>
                     <div class="col-lg-10">
-                        <input type="date" class="form-control" id="startDate" placeholder="Start date" required>
+                        <input type="date" class="form-control" id="startDate" name="startDate" placeholder="Start date" required>
                     </div>
                 </div>
                 <div class="form-group">

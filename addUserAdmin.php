@@ -1,25 +1,29 @@
 <?php
 include ("dbconnect.php");
-session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$userName = $_POST['userName'];
+$password = $_POST['password'];
+$company = $_POST['company'];
+$role = $_POST['role'];
+$date = date_create($_POST['startDate']);
+$startDate = date_format($date, "Y/m/d");
 
-    $username = mysqli_real_escape_string($db, $_POST['username']);
-    $password = mysqli_real_escape_string($db, $_POST['password']);
-
-    $sql = "SELECT user_role FROM people WHERE user_name = '$username' AND user_password = '$password'";
-    $result = mysqli_query($db, $sql);
-
-    $count = mysqli_num_rows($result);
-    $row = $result -> fetch_assoc();
-    $role = $row['user_role'];
-
-    if ($count == 1 && $role == "user"){
-        header("location: userView.php");
-        exit();
-    }
-    elseif ($count == 1 && $role == "admin"){
-        header("location: adminView.php");
-        exit();
-    }
+if ($db->connect_error){
+    die("Connection failed: " .$db->connect_error);
 }
+
+
+$sql = "INSERT INTO people (fisrst_name, last_name, user_name, user_password, company, user_role, start_date)
+            VALUES (''$firstName'', ''$lastName'', ''$userName'', ''$password'', ''$company'', ''$role'', ''$startDate'')";
+
+if (mysqli_query($db, $sql)) {
+    echo "New record created successfully";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($db);
+?>
