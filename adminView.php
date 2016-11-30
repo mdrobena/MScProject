@@ -163,7 +163,7 @@
                         <td><?php echo $row['user_password']?></td>
                         <td><?php echo $row['company']?></td>
                         <td><?php echo $row['user_role']?></td>
-                        <td><?php echo date_format($row['start_date'], "d/m/Y")?></td>
+                        <td><?php $date = date_create($row['start_date']); echo date_format($date, "d/m/Y")?></td>
                     </tr>
                 <?php } ?>
                 </tbody>
