@@ -183,6 +183,9 @@
     <!--DataTables javascript file-->
     <script type="text/javascript" charset="utf8" src="DataTables/DataTables-1.10.12/js/jquery.dataTables.js"></script>
 
+    <!--DataTables EU date javascript file-->
+    <script type="text/javascript" charset="utf8" src="DataTables/DataTables-1.10.12/plugins/date-eu.js"></script>
+
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function() {
             $('#table_id').DataTable({
