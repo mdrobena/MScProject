@@ -170,10 +170,8 @@
             </table>
         </div>
 
-<footer class="footer">
-
-        <p class="text-muted">Developed by Michal Drobena 2016</p>
-
+<footer>
+    <p>Developed by Michal Drobena 2016</p>
 </footer>
 
     <!--jQuery library-->

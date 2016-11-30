@@ -1,5 +1,5 @@
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -15,7 +15,3 @@
     margin-right: auto;
 }
 
-#signOutButton{
-    margin-top: auto;
-    margin-bottom: auto;
-}
