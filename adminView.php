@@ -23,8 +23,8 @@
 
 
 </head>
-
 <body>
+<div class="container">
     <div class="container">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -212,6 +212,7 @@
 
         } );
     </script>
-
+</div>
 </body>
+
 </html>
