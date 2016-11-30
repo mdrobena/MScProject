@@ -53,7 +53,7 @@
 
     <div class="container">
         <!--Add user/admin form starts here-->
-        <form id="addForm" class="form-horizontal">
+        <form id="addForm" class="form-horizontal" action="addUserAdmin.php" method="post">
             <fieldset>
                 <legend>Add user/admin</legend>
                 <div class="form-group">
@@ -163,7 +163,7 @@
                         <td><?php echo $row['user_password']?></td>
                         <td><?php echo $row['company']?></td>
                         <td><?php echo $row['user_role']?></td>
-                        <td><?php echo $row['start_date']?></td>
+                        <td><?php echo date_format($row['start_date'], "d/m/Y")?></td>
                     </tr>
                 <?php } ?>
                 </tbody>
