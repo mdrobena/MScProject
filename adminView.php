@@ -45,7 +45,7 @@
                         <li id="deleteButtonNavBar"><a href="#">Delete user/admin</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><form action="index.html"><input type="button" value="Sign out" style="margin-top: auto"></form></li>
+                        <li id="signOutButton"><form action="index.html"><input type="button" value="Sign out" style="margin-top: auto"></form></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -119,7 +119,7 @@
                 <div class="form-group">
                     <label for="firstName" class="col-lg-2 control-label">User ID</label>
                     <div class="col-lg-10">
-                        <input type="number" class="form-control" id="firstName"  placeholder="First name" required>
+                        <input type="number" class="form-control" id="firstName"  placeholder="User ID" required>
                     </div>
                 </div>
                 <div class="form-group">
