@@ -191,7 +191,7 @@
 
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function() {
-            $.fn.dataTable.moment('dd/mm/YYYY');
+            $.fn.dataTable.moment('DD/MM/YYYY');
 
             $('#table_id').DataTable();
 
