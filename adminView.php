@@ -42,7 +42,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="adminView.php">Home</a></li>
                         <li id="addButtonNavBar"><a href="#">Add user/admin</a></li>
-                        <li><a href="#">Delete user/admin</a></li>
+                        <li id="deleteButtonNavBar"><a href="#">Delete user/admin</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><form action="index.html"><input type="button" value="Sign out" style="margin-top: auto"></form></li>
@@ -53,6 +53,7 @@
     </div>
 
     <div class="container">
+        <!--Add user/admin form starts here-->
         <form id="addForm" class="form-horizontal">
             <fieldset>
                 <legend>Add user/admin</legend>
@@ -103,12 +104,33 @@
                 </div>
                 <div class="form-group">
                     <div class="col-lg-10 col-lg-offset-2">
-                        <button type="reset" id="resetButton" class="btn btn-default">Cancel</button>
-                        <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                        <button type="reset" id="resetAddFormButton" class="btn btn-default">Cancel</button>
+                        <button type="submit" id="submitAddFormButton" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </fieldset>
         </form>
+        <!--Add user/admin form ends here-->
+
+        <!--Delete user/admin form starts here-->
+        <form id="deleteForm" class="form-horizontal">
+            <fieldset>
+                <legend>Delete user/admin</legend>
+                <div class="form-group">
+                    <label for="firstName" class="col-lg-2 control-label">User ID</label>
+                    <div class="col-lg-10">
+                        <input type="number" class="form-control" id="firstName"  placeholder="First name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="reset" id="resetDeleteFormButton" class="btn btn-default">Cancel</button>
+                        <button type="submit" id="submitDeleteFormButton" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <!--Delete user/admin form ends here-->
     </div>
 
         <div class="container">
@@ -169,12 +191,22 @@
             $('#table_id').DataTable();
 
             $('#addForm').toggle();
+            $('#deleteForm').toggle();
 
             $('#addButtonNavBar').click(function(){
                 $('#addForm').show();
             });
-            $('#resetButton').click(function(){
+
+            $('#deleteButtonNavBar').click(function(){
+                $('#deleteForm').show();
+            });
+
+            $('#resetAddFormButton').click(function(){
                 $('#addForm').hide();
+            });
+
+            $('#resetDeleteFormButton').click(function(){
+                $('#deleteForm').hide();
             });
 
 
