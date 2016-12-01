@@ -11,7 +11,9 @@ if ($db->connect_error){
 $sql = "DELETE FROM people WHERE user_id = '$userID'";
 
 if (mysqli_query($db, $sql)) {
-    echo "Record deleted successfully";
+    header("location: adminView.php");
+    exit();
+   #echo "Record deleted successfully";
 }
 
 else {

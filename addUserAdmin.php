@@ -19,7 +19,9 @@ $sql = "INSERT INTO people (first_name, last_name, user_name, user_password, com
             VALUES ('$firstName', '$lastName', '$userName', '$password', '$company', '$role', '$startDate')";
 
 if (mysqli_query($db, $sql)) {
-    echo "New record created successfully";
+    header("location: adminView.php");
+    exit();
+    #echo "New record created successfully";
 }
 else {
     echo "Error: " . $sql . "<br>" . mysqli_error($db);
