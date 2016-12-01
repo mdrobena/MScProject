@@ -12,8 +12,8 @@ $sql = "DELETE FROM people WHERE user_id = '$userID'";
 
 if (mysqli_query($db, $sql)) {
     echo "Record deleted successfully";
-    echo $userID;
 }
+
 else {
     echo "Error: " . $sql . "<br>" . mysqli_error($db);
 }

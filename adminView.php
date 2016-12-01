@@ -112,7 +112,7 @@
         <!--Add user/admin form ends here-->
 
         <!--Delete user/admin form starts here-->
-        <form id="deleteForm" class="form-horizontal" action="deleteUserAdmin.php">
+        <form id="deleteForm" class="form-horizontal" action="deleteUserAdmin.php" method="post">
             <fieldset>
                 <legend>Delete user/admin</legend>
                 <div class="form-group">
