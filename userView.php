@@ -49,7 +49,7 @@
     </div>
 
     <div class="container">
-        <iframe><!--My embedded Shiny comes here!!!--></iframe>
+        <iframe src="https://idsdatanet.shinyapps.io/Test/" width="500px"></iframe>
     </div>
 
     <div class="footer">
