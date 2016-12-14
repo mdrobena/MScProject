@@ -48,9 +48,9 @@
         </nav>
     </div>
 
-    <div class="app">
-        <iframe src="https://idsdatanet.shinyapps.io/Test/" width="100%" height="100%"></iframe>
-    </div>
+
+    <iframe src="https://idsdatanet.shinyapps.io/Test/" width="100%" height="100%"></iframe>
+
 
     <div class="footer">
         <p>Developed by Michal Drobena 2016</p>
