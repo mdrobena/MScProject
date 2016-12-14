@@ -49,7 +49,7 @@
     </div>
 
 
-    <iframe src="https://idsdatanet.shinyapps.io/Test/" width="100%" height="100%"></iframe>
+    <iframe src="https://idsdatanet.shinyapps.io/Test/" width="100%" height="1000px"></iframe>
 
 
     <div class="footer">
