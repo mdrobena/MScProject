@@ -48,8 +48,8 @@
         </nav>
     </div>
 
-    <div class="container">
-        <iframe src="https://idsdatanet.shinyapps.io/Test/" width="500px"></iframe>
+    <div class="app">
+        <iframe src="https://idsdatanet.shinyapps.io/Test/" width="100%"></iframe>
     </div>
 
     <div class="footer">
