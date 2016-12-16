@@ -32,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand">Admin portal</a>
+                    <a class="navbar-brand">User portal</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar">
@@ -47,7 +47,7 @@
             </div>
         </nav>
         <div class="iframe">
-            <iframe src="https://idsdatanet.shinyapps.io/Test/" width="600px" height="100%" style="border: none"></iframe>
+            <iframe src="https://idsdatanet.shinyapps.io/Test/" width="600px" height="800px" style="border: none"></iframe>
         </div>
 
         <div class="footer">
