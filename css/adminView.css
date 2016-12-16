@@ -18,9 +18,10 @@
     width: 100%;
 }
 
-#iframe {
+.iframe {
     width: 600px;
     height: auto;
+    overflow:hidden;
     margin-right: auto;
     margin-left: auto;
 }
