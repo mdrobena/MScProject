@@ -47,7 +47,7 @@
             </div>
         </nav>
         <div class="iframe">
-            <iframe src="https://idsdatanet.shinyapps.io/Test/" width="600px" style="border: none"></iframe>
+            <iframe src="https://idsdatanet.shinyapps.io/Test/" width="600px" height="100%" style="border: none"></iframe>
         </div>
 
         <div class="footer">
