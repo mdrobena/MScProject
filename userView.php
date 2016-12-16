@@ -46,15 +46,16 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
+        <div class="iframe">
+            <iframe src="https://idsdatanet.shinyapps.io/Test/" width="600px" style="border: none"></iframe>
+        </div>
+
+        <div class="footer">
+            <p>Developed by Michal Drobena 2016</p>
+        </div>
     </div>
 
-    <div class="iframe">
-    <iframe src="https://idsdatanet.shinyapps.io/Test/" width="600px" style="border: none"></iframe>
-    </div>
 
-    <div class="footer">
-        <p>Developed by Michal Drobena 2016</p>
-    </div>
 
     <!--jQuery library-->
     <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
