@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
+    $role = "";
 
     $host = 'ap-cdbr-azure-east-c.cloudapp.net';
     $db   = 'md1511989';
@@ -21,6 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         PDO::ATTR_EMULATE_PREPARES   => false,
     ];
     $pdo = new PDO($dsn, $user, $pass, $opt);
+    $mysqli = new mysqli($host, $user, $pass, $db);
+
 
     try {
 
@@ -37,15 +40,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         mysqli_stmt_execute($stmt);
         mysqli_stmt_bind_result($stmt, $role);*/
 
-        $stmt = $pdo->prepare('SELECT role FROM people WHERE user_name = :user_name AND user_password = :user_password');
-        $pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-        $stmt->execute(['user_name' => $username, 'user_password' => $password]);
-        $row = $stmt->fetch();
+        $stmt = $mysqli->prepare('SELECT role FROM people WHERE user_name = ? AND user_password = ?');
+        //$pdo->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        $stmt->bindParam('ss',$username, $password);
+        $stmt->execute();
+        $stmt->bind_result($role);
+        //$row = $stmt->fetch();
 
 
     //$count = mysqli_num_rows($result);
     //$row = $stmt->fetch();
-    $role = $row['role'];
+    //$role = $row['role'];
 
     if ($role == "user") {
         header("location: userView.php");
