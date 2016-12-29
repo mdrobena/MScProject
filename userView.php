@@ -59,7 +59,7 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
             <fieldset>
                 <legend>About this application</legend>
                 <div class="form-group">
-                    <div class="col-lg-10">
+                    <div class="col-lg-5">
                         <p>This application aims to predict the amount of day it will take to drill a well. The time calculated represents the productive time only, e.g. only the time that actively contributes to the delivery of the well. The non-productive time, e.g. waiting-on-weather is not included in the prediction. Please note: All physical variables have to be entered in metric units!</p>
                     </div>
                 </div>
