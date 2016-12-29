@@ -20,16 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pass = "7359d184"; //my_username's password
     $database = "md1511989"; //the database we want to use.
 
-    $mysqli = new mysqli($host, $user, $pass,$database);
+    $mysqli = new mysqli($host, $user, $pass, $database);
     $stmt = $mysqli->stmt_init();
     $stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1");
     $stmt -> bind_param('s',$username);
     $stmt -> bind_param('s',$password);
     $stmt -> execute();
     $stmt->bind_result($role);
+    $role = $role['role'];
 
 
-    $count = mysqli_num_rows($result);
+    echo $role."fdf";
 
     // If result matched $myusername and $mypassword, table row must be 1 row
 
