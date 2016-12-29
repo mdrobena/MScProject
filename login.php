@@ -13,7 +13,7 @@ $dbname = "md1511989";
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
 try {
-    $oDB = new PDO("mysql:host=$servername; dbname=$dbname", $dbusername, $dbpassword);
+    $oDB = new PDO("mysqli:host=$servername; dbname=$dbname", $dbusername, $dbpassword);
     $oDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $oDB->prepare("SELECT role FROM people WHERE user_name = :user_name AND user_password = :user_password");
     $stmt->bindValue(':user_name', $username);
@@ -39,7 +39,6 @@ try {
         exit();
     } else {
         header("location: index.html");
-        echo 'Wrong credentials!';
         exit();
     }
     }catch(Exception $e){
@@ -47,3 +46,4 @@ try {
     }
 }
 else{echo 'dsds';}
+?>
