@@ -28,6 +28,7 @@ try {
 
     //$count = mysqli_num_rows($result);
     $role = $stmt->fetch(PDO::FETCH_ASSOC);
+    echo $role;
     //$role = $row['role'];
 
     if ($role == "user") {
