@@ -80,6 +80,7 @@ else{}
                 <strong>Invalid User ID and/or Password!!!</strong>
             </div>
             <?php
+            session_destroy();
         }
         ?>
     </form>
