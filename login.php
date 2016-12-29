@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_result($role);
     $stmt->fetch();
 
-    printf($role);
+    echo $role."fds";
 
 
     if($stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1")){
