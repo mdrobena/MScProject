@@ -63,14 +63,6 @@ else{}
 <body>
 <!--Log in form-->
 <div class="container">
-    <div class="container">
-        <?php
-        if($_SESSION['login_error'] == 1){
-            echo "<p style='margin-left: auto;margin-right: auto'>Invalid User ID</p>";
-            session_destroy();
-        }
-        ?>
-    </div>
     <form class="form-signin" action="login.php" method="post">
         <h2 class="form-signin-heading">Please log in</h2>
         <label for="username" class="sr-only">User ID</label>
@@ -79,6 +71,23 @@ else{}
         <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
     </form>
+    <div class="container">
+        <?php
+        if($_SESSION['login_error'] == 1){
+            echo "<strong>Invalid User ID and/or Password!</strong>";
+            session_destroy();
+        }
+        ?>
+    </div>
+    <?php
+    if($_SESSION['login_error'] == 1){
+        echo "<div class='alert alert-dismissable alert-danger'>";
+
+                echo "<button type='button' class='close' data-dismiss='alert'>&times;</button>";
+                echo "<strong>Invalid User ID and/or Password!</strong>";
+
+        echo "</div>"
+        ?>
 </div>
 
 <!--jQuery library-->
