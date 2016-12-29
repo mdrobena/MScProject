@@ -26,7 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt -> bind_param('s',$username);
     $stmt -> bind_param('s',$password);
     $stmt -> execute();
-    $stmt->bind_result($role);
+    $stmt->store_result();
+    echo $stmt->num_rows;
 
 
     if($stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1")){
