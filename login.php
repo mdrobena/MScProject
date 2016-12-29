@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    echo $role."fdf";
+    echo $role."hhjh";
 
     // If result matched $myusername and $mypassword, table row must be 1 row
 
