@@ -69,6 +69,7 @@ else{}
         <input type="email" id="username" name="username" class="form-control" placeholder="User ID" required autofocus><br>
         <label for="password" class="sr-only">Password</label>
         <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+        <p id="help" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Forgot user id or password?</p>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
         <br>
         <br>
@@ -92,6 +93,30 @@ else{}
 
 <!-- Bootstrap minified JavaScript -->
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+
+
+        $('#help').popover('hide');
+
+
+        $('#help').click(function(){
+            $('#help').popover('toggle');
+        });
+
+
+
+    });
+</script>
 
 </body>
 </html>

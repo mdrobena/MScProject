@@ -51,7 +51,7 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "admin"){
                         <li id="deleteButtonNavBar"><a href="#">Delete user/admin</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><form id="signOutButton" action="logout.php" style="margin: auto"><input type="submit" value="Sign out" ></form></li>
+                        <li><a href="logout.php">Log out</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
