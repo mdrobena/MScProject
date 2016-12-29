@@ -30,8 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: adminView.php");
         exit();
     } else {
-        header("location: index.html");
-        exit();
+        echo "Wrong User ID and/or Password ";
     }
 
 }
