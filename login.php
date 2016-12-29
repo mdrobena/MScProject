@@ -15,9 +15,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = $row['role'];*/
     $role = '';
 
-    $stmt = $db->prepare("SELECT role FROM people WHERE user_name = :user_name AND user_password = :user_password LIMIT 1");
-    $stmt -> bind_param(':user_name',$username);
-    $stmt -> bind_param(':user_password',$password);
+    $host = "ap-cdbr-azure-east-c.cloudapp.net"; //"localhost" or "http://mysql.host.com"
+    $user = "b21d7723d488a2"; //an authorized user of the MySQL database
+    $pass = "7359d184"; //my_username's password
+    $database = "md1511989"; //the database we want to use.
+
+    $mysqli = new mysqli($host, $user, $pass,$database);
+    $stmt = $mysqli->stmt_init();
+    $stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1");
+    $stmt -> bind_param('s',$username);
+    $stmt -> bind_param('s',$password);
     $stmt -> execute();
     $stmt->bind_result($role);
 
