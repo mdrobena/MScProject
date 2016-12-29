@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt -> execute();
     $stmt->bind_result($role);
 
+
     if($stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1")){
         echo 'ok';
     }
@@ -35,6 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo $role."new";
 
     // If result matched $myusername and $mypassword, table row must be 1 row
+
+    while($stmt->fetch()){
 
 
     if ($role == "user") {
@@ -50,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $_SESSION['login_error'] = 1;
     }
-
+    }
 }
 else{}
 ?>
