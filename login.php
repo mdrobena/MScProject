@@ -67,6 +67,7 @@ else{}
         <?php
         if($_SESSION['login_error'] == 1){
             echo "<p style='margin-left: auto;margin-right: auto'>Invalid User ID</p>";
+            session_destroy();
         }
         ?>
     </div>
