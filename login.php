@@ -27,8 +27,8 @@ try {
     //$result = mysqli_query($db, $sql);
 
     //$count = mysqli_num_rows($result);
-    $role = $stmt->fetch(PDO::FETCH_ASSOC);
-    //$role = $row['role'];
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    $role = $row['role'];
 
     if ($role == "user") {
         header("location: userView.php");
