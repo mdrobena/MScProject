@@ -45,7 +45,7 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav">
                         <li id="aboutButtonNavBar"><a href="#">About</a></li>
-                        <li id="aboutButtonNavBar"><a href="#">Help</a></li>
+                        <li id="helpButtonNavBar"><a href="#">Help</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="logout.php">Log out</a></form></li>
@@ -53,6 +53,26 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
+
+        <!--Delete user/admin form starts here-->
+        <form id="aboutForm" class="form-horizontal">
+            <fieldset>
+                <legend>About this application</legend>
+                <div class="form-group">
+
+                    <div class="col-lg-10">
+                        <p>Blah, blah</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" id="closeAboutFormButton" class="btn btn-primary">Close</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <!--Delete user/admin form ends here-->
+
         <div class="iframe">
             <iframe src="https://idsdatanet.shinyapps.io/Test/" width="600px" height="800px" style="border: none"></iframe>
         </div>
@@ -72,16 +92,12 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
 
     <script type="text/javascript" charset="utf-8">
         $(document).ready(function() {
-            $.fn.dataTable.moment('DD/MM/YYYY');
 
-            $('#table_id').DataTable();
-
-
-            $('#addForm').toggle();
+            $('#aboutForm').toggle();
             $('#deleteForm').toggle();
 
-            $('#addButtonNavBar').click(function(){
-                $('#addForm').toggle();
+            $('#aboutButtonNavBar').click(function(){
+                $('#aboutForm').toggle();
                 $('#deleteForm').hide();
             });
 
@@ -90,8 +106,8 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
                 $('#addForm').hide();
             });
 
-            $('#resetAddFormButton').click(function(){
-                $('#addForm').hide();
+            $('#closeAboutFormButton').click(function(){
+                $('#aboutForm').hide();
             });
 
             $('#resetDeleteFormButton').click(function(){
