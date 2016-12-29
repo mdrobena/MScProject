@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt -> bind_param('s',$password);
     $stmt -> execute();
     $stmt->bind_result($role);
-    $role = $role['role'];
+
 
 
     echo $role."fdf";
