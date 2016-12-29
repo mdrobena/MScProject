@@ -70,7 +70,7 @@ else{}
         <label for="password" class="sr-only">Password</label>
         <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
         <a href="#" id="help" tabindex="0" role="button" data-toggle="popover" title="Contact support" data-content="Email: support@well.org Phone: 004465975487">Forgot user id or password?</a>
-        <br>
+        <br><br>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
         <br>
         <br>
