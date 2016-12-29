@@ -27,9 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = mysqli_real_escape_string($db, $_POST['password']);
     $stmt -> execute();
     $stmt->bind_result($role);
-    $stmt->fetch();
+    /*$stmt->fetch();*/
 
-    echo $role."fds";
+    echo $role."fdsd";
 
 
     if($stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1")){
