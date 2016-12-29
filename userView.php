@@ -39,7 +39,7 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h3 class="navbar-brand">User portal</h3>
+                    <a class="navbar-brand" >User portal</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar">
