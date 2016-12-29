@@ -44,11 +44,10 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
 
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav">
-                        <li id="addButtonNavBar"><a href="#">Add user/admin</a></li>
-                        <li id="deleteButtonNavBar"><a href="#">Delete user/admin</a></li>
+                        <li id="aboutButtonNavBar"><a href="#">About</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><form id="signOutButton" action="logout.php" style="margin: auto"><input type="submit" value="Sign out" ></form></li>
+                        <li><a href="logout.php">Log out</a></form></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
