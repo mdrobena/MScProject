@@ -64,7 +64,7 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-lg-10 col-lg-offset-0">
+                    <div class="col-lg-10 col-lg-offset-11">
                         <button type="submit" id="closeAboutFormButton" class="btn btn-primary">Close</button>
                     </div>
                 </div>
