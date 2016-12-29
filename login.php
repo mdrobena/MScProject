@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
 
-    $sql = "SELECT role FROM people WHERE user_name = '$username' AND user_password = '$password'";
+    $sql = "SELECT role FROM people WHERE user_name = '$username' AND user_password = '$password' LIMIT 1";
     $result = mysqli_query($db,$sql);
     $count = mysqli_num_rows($result);
     $row = $result->fetch_assoc();
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: adminView.php");
         exit();
     } else {
-        echo "Wrong User ID and/or Password ";
+        $_SESSION['login_error'] = 1;
     }
 
 }
@@ -63,6 +63,13 @@ else{}
 <body>
 <!--Log in form-->
 <div class="container">
+    <div class="container">
+        <?php
+        if($_SESSION['login_error'] == 1){
+            echo "Invalid User ID";
+        }
+        ?>
+    </div>
     <form class="form-signin" action="login.php" method="post">
         <h2 class="form-signin-heading">Please log in</h2>
         <label for="username" class="sr-only">User ID</label>
