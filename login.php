@@ -28,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt -> execute();
     $stmt->store_result();
     echo $stmt->num_rows;
+    echo $username;
+    echo $password;
 
 
     if($stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1")){
