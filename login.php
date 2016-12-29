@@ -25,6 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: userView.php");
         exit();
     } elseif ($role == "admin") {
+        $_SESSION['login_user'] = $username;
+        $_SESSION['login_role'] = $role;
         header("location: adminView.php");
         exit();
     } else {
@@ -33,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 }
-else{echo 'dsds';}
+else{}
 ?>
 
 <!DOCTYPE html>
