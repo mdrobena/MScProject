@@ -10,17 +10,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
     try {
 
-
-
+        $stmt = mysqli_stmt_init($db);
     //$username = mysqli_real_escape_string($db, $_POST['username']);
     //$password = mysqli_real_escape_string($db, $_POST['password']);
 
-    $sql = "SELECT role FROM people WHERE user_name = '$username' AND user_password = '$password'";
+    $sql = "SELECT role FROM people WHERE user_name = ? AND user_password = ?";
     //$result = mysqli_query($db, $sql);
 
-    if($stmt = $db -> prepare($sql)){
-        $stmt->execute();
-        $stmt->bind_result($username, $password);
+    if(mysqli_stmt_prepare($stmt, $sql)){
+        mysqli_stmt_bind_param($stmt,"s",$username);
+        mysqli_stmt_bind_param($stmt,"s",$password);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_result($stmt, $role);
+
     //$count = mysqli_num_rows($result);
     $row = $stmt->fetch();
     $role = $row['role'];
