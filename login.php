@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT role FROM people WHERE user_name = '$username' AND user_password = '$password'";
     $result = mysqli_query($db,$sql);
     $count = mysqli_num_rows($result);
-    $row = $result->fetch_row();
+    $row = $result->fetch_assoc();
     $role = $row['role'];
 
         if ($role == "user") {
