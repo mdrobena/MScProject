@@ -18,8 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $db->prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1");
     $stmt -> bind_param('ss',$username,$password);
     $stmt -> execute();
-    $stmt-> bind_result($role);
-    $row = $res->fetch_assoc();
+    $row = $stmt->fetch();
+    $role = $role['role'];
+
 
     $count = mysqli_num_rows($result);
 
