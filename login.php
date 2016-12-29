@@ -80,14 +80,15 @@ else{}
         ?>
     </div>
     <?php
-    if($_SESSION['login_error'] == 1){
-        echo "<div class='alert alert-dismissable alert-danger'>";
-
-                echo "<button type='button' class='close' data-dismiss='alert'>&times;</button>";
-                echo "<strong>Invalid User ID and/or Password!</strong>";
-
-        echo "</div>"
+    if($_SESSION['login_error'] == 1) {
         ?>
+        <div class='alert alert-dismissable alert-danger'>;
+            <button type='button' class='close' data-dismiss='alert'>&times;</button>;
+            <strong>Invalid User ID and/or Password!</strong>;
+        </div>
+        <?php
+    }
+    ?>
 </div>
 
 <!--jQuery library-->
