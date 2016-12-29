@@ -15,8 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = $row['role'];*/
     $role = '';
 
-    $stmt = $db->prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1");
-    $stmt -> bind_param('ss',$username,$password);
+    $stmt = $db->prepare("SELECT role FROM people WHERE user_name = :user_name AND user_password = :user_password LIMIT 1");
+    $stmt -> bind_param(':user_name',$username);
+    $stmt -> bind_param(':user_password',$password);
     $stmt -> execute();
     $stmt->bind_result($role);
 
