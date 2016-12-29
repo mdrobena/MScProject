@@ -3,7 +3,7 @@ session_start();
 
 include ("dbconnect.php");
 
-if ($_POST['login']){
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 $servername = "ap-cdbr-azure-east-c.cloudapp.net";
 $dbusername = "b21d7723d488a2";
