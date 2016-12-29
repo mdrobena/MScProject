@@ -66,7 +66,7 @@ else{}
     <div class="container">
         <?php
         if($_SESSION['login_error'] == 1){
-            echo "Invalid User ID";
+            echo "<p style='margin-left: auto;margin-right: auto'>Invalid User ID</p>";
         }
         ?>
     </div>
