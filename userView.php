@@ -54,19 +54,13 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
             </div>
         </nav>
 
-        <!--Delete user/admin form starts here-->
+        <!--About form starts here-->
         <form id="aboutForm" class="form-horizontal">
             <fieldset>
                 <legend>About this application</legend>
                 <div class="form-group">
-
                     <div class="col-lg-10">
-                        <p>This application aims to predict the amount of day it will take to drill a well. The time
-                            calculated represents the productive time only, e.g. only the time that actively contributes
-                            to the delivery of the well. The non-productive time, e.g. waiting-on-weather is not
-                            included in the prediction.
-                            Please note: All physical variables have to be entered in metric units!
-                        </p>
+                        <p>This application aims to predict the amount of day it will take to drill a well. The time calculated represents the productive time only, e.g. only the time that actively contributes to the delivery of the well. The non-productive time, e.g. waiting-on-weather is not included in the prediction. Please note: All physical variables have to be entered in metric units!</p>
                     </div>
                 </div>
                 <div class="form-group">
@@ -76,7 +70,25 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
                 </div>
             </fieldset>
         </form>
-        <!--Delete user/admin form ends here-->
+        <!--About form ends here-->
+
+        <!--Help form starts here-->
+        <form id="helpForm" class="form-horizontal">
+            <fieldset>
+                <legend>Help</legend>
+                <div class="form-group">
+                    <div class="col-lg-10">
+                        <p>If you have any question regarding this product please contact us at support@well.org or 004659784654.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-0">
+                        <button type="submit" id="closeHelpFormButton" class="btn btn-primary">Close</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <!--Help form ends here-->
 
         <div class="iframe">
             <iframe src="https://idsdatanet.shinyapps.io/Test/" width="600px" height="800px" style="border: none"></iframe>
@@ -99,24 +111,24 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "user"){
         $(document).ready(function() {
 
             $('#aboutForm').toggle();
-            $('#deleteForm').toggle();
+            $('#helpForm').toggle();
 
             $('#aboutButtonNavBar').click(function(){
                 $('#aboutForm').toggle();
-                $('#deleteForm').hide();
+                $('#helpForm').hide();
             });
 
-            $('#deleteButtonNavBar').click(function(){
-                $('#deleteForm').toggle();
-                $('#addForm').hide();
+            $('#helpButtonNavBar').click(function(){
+                $('#helpForm').toggle();
+                $('#aboutForm').hide();
             });
 
             $('#closeAboutFormButton').click(function(){
                 $('#aboutForm').hide();
             });
 
-            $('#resetDeleteFormButton').click(function(){
-                $('#deleteForm').hide();
+            $('#closeHelpFormButton').click(function(){
+                $('#helpForm').hide();
             });
 
         });
