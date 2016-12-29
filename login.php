@@ -27,21 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = mysqli_real_escape_string($db, $_POST['password']);
     $stmt -> execute();
     $stmt->bind_result($role);
-    /*$stmt->fetch();*/
-
-    echo $role."fdsd";
-
-
-    if($stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1")){
-        echo 'ok';
-    }
-
-    echo $role."new";
-
-    // If result matched $myusername and $mypassword, table row must be 1 row
-
-    while($stmt->fetch()){
-
+    $stmt->fetch();
 
     if ($role == "user") {
         $_SESSION['login_user'] = $username;
@@ -56,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $_SESSION['login_error'] = 1;
     }
-    }
+
 }
 else{}
 ?>
