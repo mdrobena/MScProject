@@ -5,8 +5,7 @@ include ("dbconnect.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $username = mysqli_real_escape_string($db, $_POST['username']);
-    $password = mysqli_real_escape_string($db, $_POST['password']);
+
     /*
     $sql = "SELECT role FROM people WHERE user_name = '$username' AND user_password = '$password' LIMIT 1";
     $result = mysqli_query($db,$sql);
@@ -23,8 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mysqli = new mysqli($host, $user, $pass, $database);
     $stmt = $mysqli->stmt_init();
     $stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1");
-    $stmt -> bind_param('s',$username);
-    $stmt -> bind_param('s',$password);
+    $stmt -> bind_param("ss",$username,$password);
+    $username = mysqli_real_escape_string($db, $_POST['username']);
+    $password = mysqli_real_escape_string($db, $_POST['password']);
     $stmt -> execute();
     $stmt->bind_result($role);
     $stmt->fetch();
