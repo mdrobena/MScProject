@@ -28,9 +28,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt -> execute();
     $stmt->bind_result($role);
 
+    if($stmt -> prepare("SELECT role FROM people WHERE user_name = ? AND user_password = ? LIMIT 1")){
+        echo 'ok';
+    }
 
-
-    echo $role."hhjh";
+    echo $role."new";
 
     // If result matched $myusername and $mypassword, table row must be 1 row
 
