@@ -70,25 +70,18 @@ else{}
         <label for="password" class="sr-only">Password</label>
         <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-    </form>
-    <div class="container">
         <?php
-        if($_SESSION['login_error'] == 1){
-            echo "<strong>Invalid User ID and/or Password!</strong>";
-            session_destroy();
+        if($_SESSION['login_error'] == 1) {
+            ?>
+            <div class='alert alert-dismissable alert-danger'>;
+                <button type='button' class='close' data-dismiss='alert'>&times;</button>;
+                <strong>Invalid User ID and/or Password!!!</strong>;
+            </div>
+            <?php
         }
         ?>
-    </div>
-    <?php
-    if($_SESSION['login_error'] == 1) {
-        ?>
-        <div class='alert alert-dismissable alert-danger'>;
-            <button type='button' class='close' data-dismiss='alert'>&times;</button>;
-            <strong>Invalid User ID and/or Password!</strong>;
-        </div>
-        <?php
-    }
-    ?>
+    </form>
+
 </div>
 
 <!--jQuery library-->
