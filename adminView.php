@@ -66,31 +66,31 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "admin"){
                 <div class="form-group">
                     <label for="firstName" class="col-lg-2 control-label">First name</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" maxlength="35" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="lastName" class="col-lg-2 control-label">Last name</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control" id="lastName"  name="lastName" placeholder="Last name" required>
+                        <input type="text" class="form-control" id="lastName"  name="lastName" placeholder="Last name" maxlength="35" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="userName" class="col-lg-2 control-label">User name</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control" id="userName" name="userName" placeholder="User name" required>
+                        <input type="text" class="form-control" id="userName" name="userName" placeholder="User name" maxlength="35" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="col-lg-2 control-label">Password</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control" id="password" name="password" placeholder="Password" required>
+                        <input type="text" class="form-control" id="password" name="password" placeholder="Password" maxlength="35" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="company" class="col-lg-2 control-label">Company</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control" id="company" name="company" placeholder="Company" required>
+                        <input type="text" class="form-control" id="company" name="company" placeholder="Company" maxlength="35" required>
                     </div>
                 </div>
                 <div class="form-group">
