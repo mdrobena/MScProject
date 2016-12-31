@@ -84,7 +84,7 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "admin"){
                 <div class="form-group">
                     <label for="password" class="col-lg-2 control-label">Password</label>
                     <div class="col-lg-10">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                        <input type="text" class="form-control" id="password" name="password" placeholder="Password" required>
                     </div>
                 </div>
                 <div class="form-group">
