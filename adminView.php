@@ -97,7 +97,6 @@ if(isset($_SESSION['login_user']) && $_SESSION['login_role'] == "admin"){
                     <label for="role" class="col-lg-2 control-label">Role</label>
                     <div class="col-lg-10">
                         <select class="form-control" id="role" name="role">
-                            <option value="" disabled selected style="display: none;">Please choose the role</option>
                             <option>user</option>
                             <option>admin</option>
                         </select>
